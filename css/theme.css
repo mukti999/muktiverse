@@ -1,0 +1,38 @@
+/* Theme toggle styles */
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+}
+.dark-mode * {
+    background-color: black !important;
+    color: white !important;
+    border-color: #333 !important;
+}
+.dark-mode a {
+    color: #aaa !important;
+}
+.dark-mode .nav-theme-toggle {
+    color: white !important;
+}
+.dark-mode .cursor-follower ellipse {
+    fill: white !important;
+}
+.nav-theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: 5px;
+    color: inherit;
+}
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul a, ul li {
+    margin: 0 2px;
+}

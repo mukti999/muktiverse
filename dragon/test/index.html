@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    
+    <title>muktiverse</title>
+</head>
+<body>
+    <!-- DRAGON BACKGROUND LAYER - follows cursor behind content -->
+    <div class="dragon-background">
+        <svg id="dragon-svg" width="100%" height="100%" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <g id="Cabeza" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <path style="fill: #ff0000; fill-opacity: 1" d="M-28.9,-1.1L-28.55 -1.95Q-28.1 -3.1 -27.25 -2.95L-26.7 -2.95Q-27.7 -1.65 -28.9 -1.1M-18.35,-1.8Q-15.1 -10.3 -9.6 -6.05Q-15.1 -6.2 -18.35 -1.8M-18.35,1.1Q-15.1 5.45 -9.6 5.35Q-15.1 9.55 -18.35 1.1M-26.7,2.2L-27.25 2.25Q-28.1 2.4 -28.55 1.2L-28.9 0.35Q-27.7 0.9 -26.7 2.2"/>
+                    <path style="fill: #000000; fill-opacity: 1" d="M-21.05,-8.25Q-13.6 -15.95 -1.3 -12.1Q-7.85 -8.5 -5.85 -4.35Q-2.3 -4.85 10.5 0.15Q0 4.35 -5.85 3.65Q-7.85 7.75 -1.25 12.45Q-13.6 15.2 -21.05 7.5Q-29.55 4.05 -30.2 -0.35Q-29.55 -4.8 -21.05 -8.25M-26.7,-2.95L-27.25 -2.95Q-28.1 -3.1 -28.55 -1.95L-28.9 -1.1Q-27.7 -1.65 -26.7 -2.95M-9.6,-6.05Q-15.1 -10.3 -18.35 -1.8Q-15.1 -6.2 -9.6 -6.05M-9.6,5.35Q-15.1 5.45 -18.35 1.1Q-15.1 9.55 -9.6 5.35M-28.9,0.35L-28.55 1.2Q-28.1 2.4 -27.25 2.25L-26.7 2.2Q-27.7 0.9 -28.9 0.35"/>
+                </g>
+                <g id="Aletas" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <linearGradient id="LinearGradID_1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0935974, 0, 0, 0.188782, -20.55, 0)" spreadMethod="pad" x1="-819.2" y1="0" x2="819.2" y2="0">
+                        <stop offset="0" style="stop-color: #cccccc; stop-opacity: 1"/>
+                        <stop offset="1" style="stop-color: #000000; stop-opacity: 1"/>
+                    </linearGradient>
+                    <path style="fill: url(#LinearGradID_1)" d="M29.75,-36.85Q-17.75 -61.45 -42.05 -40.95L-45.35 -38.35L-53.7 -41.15L-51.15 -44.85Q-34.85 -68.4 21 -57.8Q-32.2 -72.1 -50.25 -50Q-53.85 -45.65 -56.05 -41.95L-64.7 -43.35L-60.6 -50.3Q-45.9 -75.55 5.1 -79.35Q-2.2 -79.8 -9.45 -79.15Q-16.2 -78.55 -22.85 -77.15Q-29.85 -75.65 -36.5 -73Q-43.05 -70.4 -48.8 -66.85Q-54.55 -63.35 -56.8 -60.3L-60.5 -55.4Q-62.95 -52.1 -67 -43.55L-70.55 -43.55L-76.35 -42.95Q-74.6 -49.1 -71.85 -54.85Q-68.9 -61.25 -64.8 -67.1Q-60.8 -73 -55.45 -77.55Q-49.9 -82.35 -43.65 -85.85L-30.6 -92.7Q-24.05 -95.95 -17 -98.25Q-63.75 -86.35 -73.65 -57.1Q-75.75 -50.75 -77.45 -42.75Q-82.9 -41.75 -88 -39.65Q-87.65 -46.65 -86.3 -53.05Q-79.8 -89.8 -36.65 -117.2Q-80.65 -94.5 -87.55 -59.55Q-88.65 -54.15 -88.95 -39.4L-89.8 -38.85L-92.7 -37.6Q-93.75 -44.35 -94.1 -51.15Q-94.4 -58.2 -93.25 -65.1Q-92.15 -72.5 -90.05 -79.65Q-88.05 -86.55 -85 -93Q-82.1 -99.3 -78.45 -105.15Q-74.6 -111.35 -70.25 -117.25Q-65.95 -123.1 -61.1 -128.55Q-70.3 -119.35 -77.9 -108.7Q-86 -97.3 -90.8 -84.05Q-95.8 -70.5 -96 -56.15Q-96.1 -46 -94.05 -36.05L-93.25 -31.55Q-93.5 -35.65 -92.35 -36Q-79.85 -42 -66.6 -40.45Q-52.45 -38.85 -39.2 -33.25Q-28.3 -29.9 -21.25 -24.15Q-17.8 -23.3 -8.6 -15.6Q-12.1 -20.75 -16.75 -24.5Q-24.55 -30.7 -34.25 -34.05L-42.55 -37Q-38.9 -41.25 -31.5 -43.25Q-24.05 -45.3 -16.2 -46.3Q-8.35 -47.35 -1 -46Q5.95 -44.75 12.75 -42.85Q19.85 -40.9 29.75 -36.85M-92.45,-27.35L-94.95 -36.25Q-109.7 -105 -27.95 -154.65Q-98.65 -103.8 -91.75 -39.4L-89.95 -40.2Q-92.2 -105.25 -5.6 -130.9Q-78.8 -99.95 -87.45 -40.9Q-83.15 -42.95 -78.45 -43.95Q-70 -101.3 17.65 -103.8Q-56.9 -93.4 -74.5 -44.55L-67.4 -45.45Q-49.1 -94.95 39.25 -75.65Q-36.75 -84.35 -62.25 -44.25L-57.3 -43.6Q-31.65 -86.5 56.15 -46.05Q-20.3 -73.35 -51.35 -41.7L-45.95 -39.75Q-17.85 -71.35 51.85 -24.8Q-8.7 -56.4 -39.75 -37.05Q-28.15 -34.05 -14.25 -24.45Q-8.6 -19.85 -5.8 -16.95Q5.95 -2.4 20 0Q5.95 2.4 -5.8 16.95Q-8.6 19.85 -14.25 24.45Q-28.15 34.05 -39.75 37.05Q-8.7 56.4 51.85 24.8Q-17.85 71.35 -45.95 39.75L-51.35 41.7Q-20.3 73.35 56.15 46.1Q-31.65 86.5 -57.3 43.65L-62.25 44.3Q-36.75 84.35 39.25 75.7Q-49.1 94.95 -67.4 45.5L-74.5 44.6Q-56.9 93.4 17.65 103.85Q-70 101.3 -78.45 43.95Q-83.15 42.95 -87.45 40.9Q-78.8 99.95 -5.6 130.9Q-92.2 105.25 -89.95 40.25L-91.75 39.4Q-98.65 103.8 -27.95 154.65Q-109.7 105 -94.95 36.3L-92.45 27.35Q-93.05 33.9 -92.05 34.75Q-91.1 35.55 -88.95 36.7L-87.95 37Q-83.7 38.25 -79.05 38.8L-77.25 38.95Q-72.55 39.3 -67.5 38.85L-65.45 38.65Q-44.4 36.05 -17.8 19.6Q-9.9 12.8 -15.15 4.4Q-18.15 3.15 -19 0Q-18.15 -3.15 -15.15 -4.4Q-9.9 -12.8 -17.8 -19.6L-17.8 -19.55Q-44.4 -36.05 -65.45 -38.6L-67.5 -38.8Q-72.55 -39.3 -77.25 -38.95L-79.05 -38.75Q-83.7 -38.25 -87.95 -36.95L-88.95 -36.65Q-91.1 -35.55 -92.05 -34.7Q-93.05 -33.9 -92.45 -27.35M-8.6,15.6Q-17.8 23.3 -21.25 24.2Q-28.3 29.9 -39.2 33.3Q-52.45 38.85 -66.6 40.5Q-79.85 42 -92.35 36Q-93.5 35.65 -93.25 31.55L-94.05 36.1Q-96.1 46.05 -96 56.15Q-95.8 70.5 -90.8 84.1Q-86 97.3 -77.9 108.75Q-70.3 119.35 -61.1 128.6Q-65.95 123.1 -70.25 117.25Q-74.6 111.35 -78.45 105.15Q-82.1 99.3 -85 93Q-88.05 86.55 -90.05 79.7Q-92.15 72.5 -93.25 65.1Q-94.4 58.2 -94.1 51.2Q-93.75 44.35 -92.7 37.6L-89.8 38.9L-88.95 39.45Q-88.65 54.15 -87.55 59.55Q-80.65 94.5 -36.65 117.25Q-79.8 89.8 -86.3 53.1Q-87.65 46.65 -88 39.65Q-82.9 41.75 -77.45 42.75Q-75.75 50.75 -73.65 57.15Q-63.75 86.35 -17 98.3Q-24.05 95.95 -30.6 92.75L-43.65 85.9Q-49.9 82.35 -55.45 77.6Q-60.8 73 -64.8 67.15Q-68.9 61.25 -71.85 54.85Q-74.6 49.1 -76.35 42.95L-70.55 43.6L-67 43.6Q-62.95 52.1 -60.5 55.4L-56.8 60.35Q-54.55 63.35 -48.8 66.9Q-43.05 70.4 -36.5 73Q-29.85 75.65 -22.85 77.15Q-16.2 78.55 -9.45 79.15Q-2.2 79.8 5.1 79.35Q-45.9 75.55 -60.6 50.3L-64.7 43.4L-56.05 41.95Q-53.85 45.65 -50.25 50Q-32.2 72.1 21 57.85Q-34.85 68.4 -51.15 44.85L-53.7 41.2L-45.35 38.35L-42.05 40.95Q-17.75 61.45 29.75 36.85Q19.85 40.9 12.75 42.9Q5.95 44.75 -1 46Q-8.35 47.35 -16.2 46.35Q-24.05 45.3 -31.5 43.3Q-38.9 41.25 -42.55 37.05L-34.25 34.05Q-24.55 30.7 -16.75 24.5Q-12.1 20.75 -8.6 15.6"/>
+                </g>
+                <g id="Espina" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <linearGradient id="LinearGradID_2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0229492, 0, 0, -0.0152893, 0, 0.05)" spreadMethod="pad" x1="-819.2" y1="0" x2="819.2" y2="0">
+                        <stop offset="0" style="stop-color: #464646; stop-opacity: 1"/>
+                        <stop offset="1" style="stop-color: #ff0000; stop-opacity: 1"/>
+                    </linearGradient>
+                    <path style="fill: url(#LinearGradID_2)" d="M-18.8,0Q-17.85 -5.7 -12.3 -9.6Q-11.2 -5.35 -6.5 -8.25L-6.45 -8.2L-6.2 -8.3Q1.25 -16.25 6.65 -12.4Q0.05 -12.55 0 -5.95Q2.7 -2.4 7.75 -4.1Q18 -1.45 18.8 0L-18.8 0"/>
+                    <linearGradient id="LinearGradID_3" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0229492, 0, 0, 0.0152893, 0, -0.05)" spreadMethod="pad" x1="-819.2" y1="0" x2="819.2" y2="0">
+                        <stop offset="0" style="stop-color:  #cccccc; stop-opacity: 1"/>
+                        <stop offset="1" style="stop-color: #333333; stop-opacity: 1"/>
+                    </linearGradient>
+                    <path style="fill: url(#LinearGradID_3)" d="M18.8,0Q18 1.45 7.75 4.1Q2.7 2.4 0 5.95Q0.05 12.55 6.65 12.4Q1.25 16.25 -6.2 8.35Q-6.35 8.25 -6.45 8.25L-6.5 8.25Q-11.2 5.35 -12.3 9.6Q-17.85 5.7 -18.8 0L18.8 0"/>
+                </g>
+            </defs>
+            <g id="dragon-screen"></g>
+        </svg>
+    </div>
+
+    <header>
+        <nav>
+            <div class="bar">
+                <div class="logo">
+                    <h1>muktiverse</h1>
+                </div>
+                <div class="links">
+                    <ul>
+                        <a href="#about">about</a>
+                        <li>|</li>
+                        <a href="#projects">projects</a>
+                        <li>|</li>
+                        <a href="#contact">contact</a>
+                        <li>
+                            <button id="theme-toggle" class="nav-theme-toggle">🌙</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="content">
+                    <div class="name c1">
+                        <h1>Anmol Thapa</h1>
+                        <p>developer & gamer</p>
+                    </div>
+                    <div class="text c1">
+                        <p>Tech enthusiast<br>I love building things and exploring new ideas.<br>Passionate about understanding how systems work and thinking behind the scenes.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#contact">Get in touch</a>
+                        <a href="https://github.com/muktithejod" target="_blank">View Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="text-about">
+                        <h2>About</h2>
+                        <p>
+                            I am a student who is constantly learning and building new skills.<br>I'm curious about many things — especially coding, traveling, and video games.<br>I love researching topics deeply and understanding how things actually work behind the scenes.
+                            <br>As a kid, I always dreamed of building my own game. Over time, that curiosity evolved into a deeper interest in system architecture and understanding how systems function at their core. Now, I focus on learning not just how to use technology — but how it is designed and built from the ground up.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <div class="k-heading">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="kill-container">
+                            <ul>
+                                <li>c</li>
+                                <li>c++</li>
+                                <li>c#</li>
+                                <li>python</li>
+                                <li>sql</li>
+                                <li>git</li>
+                                <li>github</li>
+                                <li>javascript</li>
+                                <li>html</li>
+                                <li>css</li>
+                                <li>Cheat Engine</li>
+                                <li>IDA Pro</li>
+                                <li>Ghidra</li>
+                                <li>Cybersecurity (basic)</li>
+                                <li>nmap</li>
+                                <li>burp suite</li>
+                                <li>john the ripper</li>
+                                <li>more incoming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <div class="projects-header">
+                    <h2>Projects</h2>
+                    <p>Some of my recent work & project</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Project Particle</h3>
+                            <p>A beautiful project done under the section of particle concept in js.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Hand tracking</span>
+                                <span>AI api</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Windows basic optimizer</h3>
+                            <p>A Windows optimization tool built in C++ that automates common system tweaks to enhance performance and responsiveness. It centralizes multiple configuration adjustments in one interface, reducing manual effort and improving overall efficiency.</p>
+                            <div class="project-tech">
+                                <span>c++</span>
+                                <span>Virtual Key Simulation</span>
+                                <span>Administrator Privileges</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Terminal Lyric Animation</h3>
+                            <p>A Python-based terminal animation project that displays song lyrics with a typewriter effect. Each character appears with controlled timing and styled formatting using the Rich library, creating an emotional and visually engaging console experience.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Rich Library</span>
+                                <span>Time-based Animation</span>
+                                <span>sys.stdout.flush</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Terminal Games</h3>
+                            <p>I've built multiple basic terminal games.<br>Independent terminal games developed in different programming languages, designed to strengthen programming fundamentals, logic development, and interactive system behavior.</p>
+                            <div class="project-tech">
+                                <span>c++</span>
+                                <span>python</span>
+                                <span>javascript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <h2>let's work together</h2>
+                        <p>Excited to build something together?<br>Whether it's a web app, a small project, or a learning experiment, I'm here to turn ideas into reality.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-main">
+                            <div class="contact-item">
+                                <span class="contact-label">Email me at</span>
+                                <a href="mailto:muktithejod@gmail.com" class="contact-link">muktithejod@gmail.com</a>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span class="contact-label">Or find me on</span>
+                                <div class="social-platforms">
+                                    <a href="https://github.com/muktithejod" target="_blank" class="social-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-availability">
+                            <div class="availability-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Available for new projects</span>
+                            </div>
+                            <p class="availability-note">Open to remote work opportunities worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h3>muktiverse</h3>
+                    </div>
+                    <p>if(idea.incomming){build;}else{have chill;}</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/muktithejod" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:muktithejod@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>muktiverse. All rights reserved.</p>
+                <p>Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/dragon.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/theme.js"></script>
+
+    <!-- Existing cursor follower (KEPT) -->
+    <svg class="cursor-follower" width="30" height="30" viewBox="0 0 30 30">
+        <ellipse cx="20" cy="20" rx="20" ry="20" fill="#303030"></ellipse>
+    </svg>
+
+</body>
+</html>

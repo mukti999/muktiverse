@@ -1,0 +1,1057 @@
+.cursor-follower {
+    z-index: 9998;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: f1;
+  src: url(/fonts/f1.woff2);
+}
+
+@font-face {
+  font-family: f2;
+  src: url(/fonts/f2.woff2);
+}
+
+@font-face {
+  font-family: f3;
+  src: url(/fonts/f3.woff2);
+}
+
+:root {
+  --text-color: #303030;
+  --text-color-secondary: #717171;
+  --main-bg: #f5f5f5;
+}
+
+.cursor-follower {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+body,
+html {
+  background: var(--main-bg);
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+header {
+  position: fixed;
+  background: #f5f5f56c;
+  z-index: 898;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0vw 6vw;
+}
+
+header nav {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+header nav .bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .bar .logo h1 {
+  font-size: 1.5rem;
+  font-family: f2;
+  font-weight: normal;
+}
+
+header nav .bar .links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .bar .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  list-style: none;
+}
+
+header nav .bar .links ul li {
+  font-size: 1.5rem;
+  font-family: f2;
+}
+
+header nav .bar .links ul a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: f2;
+}
+
+main {
+  width: 100%;
+  padding: 0vw 6vw;
+}
+
+main .home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+main .home .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .home .container .content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .home .container .content .name {
+  position: relative;
+}
+
+main .home .container .content .name h1 {
+  font-size: clamp(4rem, 6vw, 8rem);
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+main .home .container .content .name p {
+  font-size: clamp(2rem, 3vw, 2.4rem);
+  font-family: f2;
+  color: var(--text-color-secondary);
+}
+
+main .home .container .content .text {
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+main .home .container .content .text p {
+  text-align: center;
+  line-height: 3rem;
+  font-size: clamp(1.8rem, 3vw, 1.8rem);
+  font-family: f2;
+  color: var(--text-color-secondary);
+}
+
+main .home .container .content .buttons {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+main .home .container .content .buttons a {
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  font-family: f2;
+  font-size: 1.5rem;
+}
+
+main .home .container .content .buttons :nth-child(1) {
+  background: var(--text-color-secondary);
+  color: var(--main-bg);
+}
+
+main .home .container .content .buttons :nth-child(2) {
+  border: 1px solid var(--text-color-secondary);
+  color: var(--text-color);
+}
+
+main .home .container .content .c1 {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 0;
+}
+
+main .about .about-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .about .about-container .text-about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main .about .about-container .text-about h2 {
+  font-size: 5rem;
+  font-family: f2;
+  font-weight: 400;
+}
+
+main .about .about-container .text-about p {
+  margin-top: 4rem;
+  padding-right: 4rem;
+  font-size: 2rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+  line-height: 3rem;
+  word-spacing: 1rem;
+}
+
+main .about .about-container .skills {
+  margin-top: 6rem;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .about .about-container .skills .k-heading {
+  margin-bottom: 3rem;
+}
+
+main .about .about-container .skills .k-heading h2 {
+  font-size: 2.4rem;
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+main .about .about-container .skills .kill-container {
+  width: 100%;
+  position: relative;
+}
+
+main .about .about-container .skills .kill-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+  align-items: center;
+}
+
+main .about .about-container .skills .kill-container ul li {
+  font-family: f2;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+main .about .about-container .skills .kill-container ul li:hover {
+  color: var(--text-color-secondary);
+  transform: translateX(5px);
+}
+
+main .about .about-container .skills .kill-container ul li::before {
+  content: '•';
+  color: var(--text-color-secondary);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */
+/* Pro
+jects Section */
+main .projects {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 0;
+}
+
+main .projects .projects-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main .projects .projects-container .projects-header {
+  margin-bottom: 6rem;
+}
+
+main .projects .projects-container .projects-header h2 {
+  font-size: 5rem;
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+main .projects .projects-container .projects-header p {
+  font-size: 2rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+  line-height: 3rem;
+}
+
+main .projects .projects-container .projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+main .projects .projects-container .projects-grid .project-card {
+  padding: 0;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main .projects .projects-container .projects-grid .project-card:hover {
+  transform: translateX(2rem);
+}
+
+main .projects .projects-container .projects-grid .project-card .project-info h3 {
+  font-size: 3rem;
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-info p {
+  font-size: 1.8rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 70%;
+  padding-right: 2rem;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-tech span {
+  font-family: f2;
+  font-size: 1.4rem;
+  color: var(--text-color-secondary);
+  position: relative;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-tech span::before {
+  content: '/';
+  margin-right: 2rem;
+  color: var(--text-color-secondary);
+}
+
+main .projects .projects-container .projects-grid .project-card .project-tech span:first-child::before {
+  content: '';
+  margin-right: 0;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-links {
+  display: flex;
+  gap: 3rem;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-links .project-link {
+  text-decoration: none;
+  font-family: f2;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-links .project-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--text-color);
+  transition: width 0.3s ease;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-links .project-link:hover::after {
+  width: 100%;
+}
+
+main .projects .projects-container .projects-grid .project-card .project-links .project-link:hover {
+  color: var(--text-color-secondary);
+}
+
+/* Contact Section */
+main .contact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .contact .contact-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main .contact .contact-container .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6rem;
+}
+
+main .contact .contact-container .contact-content .contact-header h2 {
+  font-size: 5rem;
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+main .contact .contact-container .contact-content .contact-header p {
+  font-size: 2rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+  line-height: 3rem;
+  max-width: 600px;
+  padding: 0 2rem;
+}
+
+main .contact .contact-container .contact-content .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-label {
+  font-size: 1.4rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+  text-transform: lowercase;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-link {
+  font-size: 2.4rem;
+  font-family: f2;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--text-color);
+  transition: width 0.3s ease;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-link:hover::after {
+  width: 100%;
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-link:hover {
+  color: var(--text-color-secondary);
+}
+
+main .contact .contact-container .contact-content .contact-info .social-platforms {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .contact .contact-container .contact-content .contact-info .social-link {
+  font-size: 1.8rem;
+  font-family: f2;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main .contact .contact-container .contact-content .contact-info .social-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text-color);
+  transition: width 0.3s ease;
+}
+
+main .contact .contact-container .contact-content .contact-info .social-link:hover::after {
+  width: 100%;
+}
+
+main .contact .contact-container .contact-content .contact-info .social-link:hover {
+  color: var(--text-color-secondary);
+}
+
+main .contact .contact-container .contact-content .contact-info .contact-availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+main .contact .contact-container .contact-content .contact-info .availability-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .contact .contact-container .contact-content .contact-info .status-indicator {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+main .contact .contact-container .contact-content .contact-info .status-text {
+  font-size: 1.6rem;
+  font-family: f2;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+main .contact .contact-container .contact-content .contact-info .availability-note {
+  font-size: 1.4rem;
+  font-family: f2;
+  color: var(--text-color-secondary);
+}
+
+/* Footer */
+footer {
+  background: var(--text-color);
+  color: var(--main-bg);
+  padding: 6rem 6vw 3rem;
+}
+
+footer .footer-container {
+  position: relative;
+  width: 100%;
+}
+
+footer .footer-container .footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-bottom: 4rem;
+}
+
+footer .footer-container .footer-content .footer-left .footer-logo h3 {
+  font-size: 2.4rem;
+  font-family: f2;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+footer .footer-container .footer-content .footer-left p {
+  font-size: 1.6rem;
+  font-family: f2;
+  line-height: 2.4rem;
+  opacity: 0.8;
+}
+
+footer .footer-container .footer-content .footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+footer .footer-container .footer-content .footer-links .footer-section h4 {
+  font-size: 1.8rem;
+  font-family: f2;
+  margin-bottom: 2rem;
+}
+
+footer .footer-container .footer-content .footer-links .footer-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .footer-container .footer-content .footer-links .footer-section ul li a {
+  font-size: 1.5rem;
+  font-family: f2;
+  color: var(--main-bg);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer .footer-container .footer-content .footer-links .footer-section ul li a:hover {
+  opacity: 1;
+}
+
+footer .footer-container .footer-bottom {
+  border-top: 1px solid rgba(245, 245, 245, 0.2);
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-container .footer-bottom p {
+  font-size: 1.4rem;
+  font-family: f2;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  main {
+    padding: 0vw 5vw;
+  }
+  
+  header {
+    padding: 0vw 5vw;
+  }
+  
+  footer {
+    padding: 5rem 5vw 2.5rem;
+  }
+  
+  main .projects .projects-container .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0vw 6vw;
+  }
+  
+  header {
+    padding: 0vw 6vw;
+  }
+  
+  /* Adjust text padding for tablet */
+  main .home .container .content .text {
+    padding: 0 1rem;
+  }
+  
+  main .about .about-container .text-about p {
+    padding-right: 2rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-header p {
+    padding: 0 1rem;
+  }
+  
+  /* About Section Responsive */
+  main .about {
+    height: auto;
+    min-height: 100vh;
+    padding: 6rem 0;
+  }
+  
+  main .about .about-container {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+  
+  main .about .about-container .about-content {
+    width: 100%;
+  }
+  
+  main .about .about-container .text-about h2 {
+    font-size: 4rem;
+  }
+  
+  main .about .about-container .text-about p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-top: 2rem;
+  }
+  
+  main .about .about-container .skills {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  
+  main .about .about-container .skills .kill-container ul {
+    gap: 1.5rem 2rem;
+  }
+  
+  main .about .about-container .skills .kill-container ul li {
+    font-size: 1.4rem;
+  }
+  
+  /* Projects Section Responsive */
+  main .projects .projects-container .projects-grid {
+    gap: 4rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-info p {
+    max-width: 90%;
+    padding-right: 1rem;
+  }
+  
+  main .projects .projects-container .projects-header h2 {
+    font-size: 4rem;
+  }
+  
+  main .projects .projects-container .projects-header p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  
+  /* Contact Section Responsive */
+  main .contact .contact-container .contact-content .contact-info {
+    gap: 4rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-info .contact-main {
+    gap: 3rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-info .social-platforms {
+    gap: 2rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-header h2 {
+    font-size: 4rem;
+  }
+  
+  /* Footer Responsive */
+  footer {
+    padding: 4rem 6vw 2rem;
+  }
+  
+  footer .footer-container .footer-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  footer .footer-container .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0vw 8vw;
+  }
+  
+  header {
+    padding: 0vw 8vw;
+  }
+  
+  /* Adjust text padding for mobile */
+  main .home .container .content .text {
+    padding: 0;
+    margin-top: 3rem;
+  }
+  
+  main .about .about-container .text-about p {
+    padding-right: 0;
+  }
+  
+  main .contact .contact-container .contact-content .contact-header p {
+    padding: 0;
+  }
+  
+  /* About Section Mobile */
+  main .about .about-container .text-about h2 {
+    font-size: 3.5rem;
+  }
+  
+  main .about .about-container .text-about p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  
+  main .about .about-container .skills .kill-container ul {
+    gap: 1rem 1.5rem;
+  }
+  
+  main .about .about-container .skills .kill-container ul li {
+    font-size: 1.3rem;
+  }
+  
+  /* Projects Section Mobile */
+  main .projects .projects-container .projects-grid {
+    gap: 4rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card:hover {
+    transform: translateX(1rem);
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-info h3 {
+    font-size: 2.4rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-info p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-tech {
+    gap: 1.5rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-tech span {
+    font-size: 1.3rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-links {
+    gap: 2rem;
+  }
+  
+  main .projects .projects-container .projects-grid .project-card .project-links .project-link {
+    font-size: 1.5rem;
+  }
+  
+  main .projects .projects-container .projects-header h2 {
+    font-size: 3.5rem;
+  }
+  
+  main .projects .projects-container .projects-header p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  
+  /* Contact Section Mobile */
+  main .contact .contact-container .contact-content .contact-info .contact-link {
+    font-size: 2rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-info .social-platforms {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-info .social-link {
+    font-size: 1.6rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-header h2 {
+    font-size: 3.5rem;
+  }
+  
+  main .contact .contact-container .contact-content .contact-header p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  
+  /* Footer Mobile */
+  footer {
+    padding: 4rem 8vw 2rem;
+  }
+  
+  footer .footer-container .footer-content .footer-links {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  /* Home Section Mobile */
+  main .home .container .content .buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  main .home .container .content .buttons a {
+    flex: 0 0 auto;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  main .home .container .content .text p {
+    line-height: 2.4rem;
+  }
+  
+  /* Hide br tags on mobile */
+  main .home .container .content .text p br {
+    display: none;
+  }
+}
+
+/* DRAGON BACKGROUND LAYER */
+.dragon-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#dragon-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+    transition: opacity 0.3s ease;
+}
+
+/* Optional: Increase dragon opacity on dark mode */
+.dark-mode #dragon-svg {
+    opacity: 0.5;
+}
+
+/* Make sure main content sits ABOVE the dragon */
+header, main, footer {
+    position: relative;
+    z-index: 10;
+}
